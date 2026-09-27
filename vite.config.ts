@@ -24,7 +24,7 @@ const devContentSecurityPolicy = [
   "worker-src 'self' blob:",
   "style-src 'self' 'unsafe-inline'",
   "font-src 'self' data:",
-  "connect-src 'self' data: blob: ws: wss: https: http://localhost:5173",
+  "connect-src 'self' data: blob: ws: wss: https: http://localhost:51730",
   "img-src 'self' data: https:",
 ].join("; ");
 
@@ -69,7 +69,7 @@ export default defineConfig(() => {
     return {
       base: "./",
       server: {
-        port: 5173,
+        port: 51730,
         host: 'localhost',
         headers: {
           // Required for SharedArrayBuffer and WASM in some browsers
